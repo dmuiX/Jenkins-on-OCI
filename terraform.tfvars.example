@@ -1,0 +1,27 @@
+### OCI STUFF ###
+tenancy_ocid = ""
+user_ocid = ""
+fingerprint = ""
+region = "eu-frankfurt-1"
+compartment_name = "jenkins-on-oci"
+email = "admin@jenkins-on-oci.org"
+### VAULT ###
+
+### NETWORKING ###
+loadbalancer = "k8s-cluster-on-oci_load_balancer"
+loadbalancer_shape = "10Mbps-Micro"
+public_subnet_cidr = "10.0.0.0/24"
+# private_subnet_cidr = "192.168.66.0/24"
+
+### COMPUTING INSTANCES ###
+
+arm_shape = "VM.Standard.A1.Flex"
+amd_shape = "VM.Standard.E2.1.Micro"
+platform_image = "ocid1.image.oc1.eu-frankfurt-1.aaaaaaaa6rml6o6ahr6466gf623erbzg6zjrnabxtbweb3ihuenpxcz65ima" #"Oracle-Linux-9.3-aarch64-2024.03.25-0"
+ssh_public_key = ""
+memory_in_gbs = 24
+ocpus = 4
+boot_volume_size_in_gbs = 50
+availability_domain = ""
+jenkins_fqdn = "jenkins"
+jenkins_ip = "10.0.0.2"

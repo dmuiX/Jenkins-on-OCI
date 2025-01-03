@@ -1,0 +1,24 @@
+# Ignore Terraform state files
+*.tfstate
+*.tfstate.backup
+
+# Ignore Terraform plan files
+*.tfplan
+
+# Ignore Terraform lock files
+*.terraform.lock.hcl
+
+# Ignore Terraform log files
+terraform.log
+
+# Ignore sensitive data
+*.pem
+*.ppk
+*.key
+
+# Ignore other temporary files
+*.tmp
+*.bak
+.terraform
+*.tfvars
+terraform.tfvars
