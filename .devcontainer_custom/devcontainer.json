@@ -1,0 +1,7 @@
+{
+    "name": "jenkins-on-oci",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "terraform",
+    "remoteUser": "root",
+    "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}"
+}

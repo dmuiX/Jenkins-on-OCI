@@ -1,8 +1,10 @@
 {
     "name": "jenkins-on-oci",
-    "image": "mcr.microsoft.com/devcontainers/universal",
-    "dockerComposeFile": "docker-compose.yml",
-    "service": "terraform",
-    "remoteUser": "root",
-    "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}"
+    "image": "mcr.microsoft.com/vscode/devcontainers/universal:linux",
+    "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+    "features": {
+        "ghcr.io/devcontainers/features/nix:1": {
+            "packages": "neovim, terraform, direnv, ocl-cli"
+        }
+    }
 }
